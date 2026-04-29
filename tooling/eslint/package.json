@@ -1,0 +1,39 @@
+{
+  "name": "@kaiserinc/eslint-config",
+  "version": "0.1.0",
+  "private": true,
+  "description": "ESLint flat config compartilhada para projetos KaiserInc",
+  "main": "./dist/base.js",
+  "exports": {
+    "./base": {
+      "types": "./dist/base.d.ts",
+      "import": "./dist/base.mjs",
+      "require": "./dist/base.js"
+    },
+    "./react": {
+      "types": "./dist/react.d.ts",
+      "import": "./dist/react.mjs",
+      "require": "./dist/react.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "dependencies": {
+    "@eslint/js": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.37.3",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "typescript-eslint": "^8.19.0"
+  },
+  "devDependencies": {
+    "@kaiserinc/typescript-config": "workspace:*",
+    "tsup": "^8.3.6",
+    "typescript": "^5.7.3"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0"
+  }
+}

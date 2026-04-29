@@ -1,0 +1,35 @@
+{
+  "name": "@kaiserinc/storybook",
+  "version": "0.0.0",
+  "private": true,
+  "description": "KaiserInc Design System — documentação interativa",
+  "scripts": {
+    "dev": "storybook dev -p 6006",
+    "build": "storybook build -o storybook-static",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "@kaiserinc/react": "workspace:*",
+    "@kaiserinc/tokens": "workspace:*"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.2",
+    "@kaiserinc/eslint-config": "workspace:*",
+    "@kaiserinc/typescript-config": "workspace:*",
+    "@storybook/addon-a11y": "^8.4.7",
+    "@storybook/addon-essentials": "^8.4.7",
+    "@storybook/addon-interactions": "^8.4.7",
+    "@storybook/addon-themes": "^8.4.7",
+    "@storybook/react": "^8.4.7",
+    "@storybook/react-vite": "^8.4.7",
+    "@storybook/test": "^8.4.7",
+    "@types/react": "^19.0.6",
+    "@types/react-dom": "^19.0.3",
+    "eslint": "^9.17.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "storybook": "^8.4.7",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.7"
+  }
+}

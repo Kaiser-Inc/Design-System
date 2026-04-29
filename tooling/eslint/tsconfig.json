@@ -1,0 +1,8 @@
+{
+  "extends": "@kaiserinc/typescript-config/base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src"
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts"]
+}

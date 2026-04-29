@@ -1,0 +1,12 @@
+{
+  "extends": "@kaiserinc/typescript-config/react.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@kaiserinc/react": ["../../packages/react/src/index.ts"],
+      "@kaiserinc/tokens": ["../../packages/tokens/src/index.ts"],
+      "@kaiserinc/tokens/css": ["../../packages/tokens/src/css/index.css"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", ".storybook/**/*.ts", ".storybook/**/*.tsx"]
+}

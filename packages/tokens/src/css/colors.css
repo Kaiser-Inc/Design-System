@@ -1,0 +1,75 @@
+:root {
+  /* ─── Brand Purple ─── */
+  --purple-50: #f1ebff;
+  --purple-100: #e0d2ff;
+  --purple-200: #c4acff;
+  --purple-300: #a78bfa;
+  --purple-400: #996dff;
+  --purple-500: #8257e6;
+  --purple-600: #6938ee;
+  --purple-700: #5a3fbe;
+  --purple-800: #402090;
+  --purple-900: #2a1466;
+
+  /* ─── Neutral Gray ─── */
+  --gray-50: #fafafc;
+  --gray-100: #e1e1e6;
+  --gray-200: #c4c4cc;
+  --gray-300: #8d8d99;
+  --gray-400: #7c7c8a;
+  --gray-500: #505059;
+  --gray-600: #323238;
+  --gray-700: #29292e;
+  --gray-800: #202024;
+  --gray-900: #121214;
+  --gray-950: #09090a;
+
+  /* ─── Status ─── */
+  --success-300: #04d361;
+  --success-500: #00b37e;
+  --warning-300: #ffca80;
+  --warning-500: #fba94c;
+  --danger-300: #fba1a8;
+  --danger-500: #f75a68;
+
+  /* ─── Semantic Foreground ─── */
+  --fg-1: var(--gray-50);
+  --fg-2: var(--gray-100);
+  --fg-3: var(--gray-300);
+  --fg-4: var(--gray-400);
+  --fg-5: var(--gray-500);
+
+  /* ─── Semantic Background ─── */
+  --bg-base: var(--gray-950);
+  --bg-surface: var(--gray-900);
+  --bg-elevated: var(--gray-800);
+
+  /* ─── Semantic Border ─── */
+  --border-subtle: var(--gray-800);
+  --border-default: var(--gray-700);
+  --border-strong: var(--gray-500);
+
+  /* ─── Semantic Brand ─── */
+  --brand-subtle: rgba(130, 87, 230, 0.12);
+  --brand-muted: rgba(130, 87, 230, 0.25);
+  --brand: var(--purple-500);
+  --brand-hover: var(--purple-400);
+  --brand-active: var(--purple-600);
+}
+
+/* Light mode override */
+[data-theme="light"] {
+  --fg-1: var(--gray-950);
+  --fg-2: var(--gray-900);
+  --fg-3: var(--gray-600);
+  --fg-4: var(--gray-500);
+  --fg-5: var(--gray-400);
+
+  --bg-base: var(--gray-50);
+  --bg-surface: #ffffff;
+  --bg-elevated: var(--gray-100);
+
+  --border-subtle: var(--gray-200);
+  --border-default: var(--gray-300);
+  --border-strong: var(--gray-400);
+}

@@ -1,0 +1,7 @@
+{
+  "name": "@kaiserinc/typescript-config",
+  "version": "0.1.0",
+  "private": true,
+  "description": "TypeScript config compartilhada para projetos KaiserInc",
+  "files": ["base.json", "react.json"]
+}

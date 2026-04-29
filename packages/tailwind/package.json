@@ -1,0 +1,52 @@
+{
+  "name": "@kaiserinc/tailwind",
+  "version": "0.1.0",
+  "description": "KaiserInc Tailwind CSS preset — suporte para v3 e v4",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./preset": {
+      "types": "./dist/preset.d.ts",
+      "import": "./dist/preset.mjs",
+      "require": "./dist/preset.js"
+    },
+    "./v4-theme.css": "./dist/v4-theme.css"
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup && tsx scripts/build-v4-theme.ts",
+    "dev": "tsup --watch",
+    "lint": "eslint src/",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@kaiserinc/tokens": "workspace:*"
+  },
+  "devDependencies": {
+    "@kaiserinc/eslint-config": "workspace:*",
+    "@kaiserinc/typescript-config": "workspace:*",
+    "eslint": "^9.17.0",
+    "tailwindcss": "^3.4.17",
+    "tsup": "^8.3.6",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  },
+  "peerDependencies": {
+    "tailwindcss": ">=3.4.0"
+  },
+  "peerDependenciesMeta": {
+    "tailwindcss": {
+      "optional": false
+    }
+  }
+}
