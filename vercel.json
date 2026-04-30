@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npx turbo build --filter=@kaiserinc/storybook && mv apps/storybook/storybook-static ./public-deploy",
+  "buildCommand": "npx turbo build --filter=@kaiserinc/storybook && cp -a ./apps/storybook/dist ./public-deploy",
   "outputDirectory": "public-deploy",
   "installCommand": "pnpm install --no-frozen-lockfile"
 }
