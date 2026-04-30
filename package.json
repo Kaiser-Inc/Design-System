@@ -4,6 +4,7 @@
   "description": "KaiserInc Design System — monorepo de tokens, componentes e utilitários de UI",
   "scripts": {
     "build": "turbo build",
+    "build:storybook": "turbo build --filter=@kaiserinc/storybook",
     "dev": "turbo dev",
     "lint": "turbo lint",
     "typecheck": "turbo typecheck",
