@@ -1,6 +1,10 @@
 // ─── Utilities ───────────────────────────────────────────────────────────────
 export { cn } from "./utils/cn.js";
 
+// ─── Brand ───────────────────────────────────────────────────────────────────
+export { Logo } from "./components/Logo/index.js";
+export type { LogoProps, LogoVariant, LogoSize } from "./components/Logo/index.js";
+
 // ─── Primitives ──────────────────────────────────────────────────────────────
 export { Button } from "./components/Button/index.js";
 export type { ButtonProps, ButtonVariant, ButtonSize } from "./components/Button/index.js";

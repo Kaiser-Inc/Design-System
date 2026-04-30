@@ -8,6 +8,7 @@ export default defineConfig({
   clean: true,
   treeshake: true,
   external: ["react", "react-dom"],
+  publicDir: "src/assets",
   esbuildOptions(options) {
     options.jsx = "automatic";
   },

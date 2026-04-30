@@ -1,0 +1,5 @@
+{
+  "buildCommand": "pnpm build --filter=\"@kaiserinc/storybook\"",
+  "outputDirectory": "apps/storybook/storybook-static",
+  "installCommand": "pnpm install"
+}
