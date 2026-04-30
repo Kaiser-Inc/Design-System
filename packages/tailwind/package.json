@@ -1,6 +1,6 @@
 {
   "name": "@kaiserinc/tailwind",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "KaiserInc Tailwind CSS preset — suporte para v3 e v4",
   "license": "MIT",
   "publishConfig": {
@@ -22,7 +22,9 @@
     },
     "./v4-theme.css": "./dist/v4-theme.css"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup && tsx scripts/build-v4-theme.ts",
     "dev": "tsup --watch",
