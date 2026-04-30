@@ -1,0 +1,17 @@
+/* ─── Tailwind v4 ─── */
+@import "tailwindcss";
+
+/*
+ * Diz ao Tailwind para escanear os arquivos de componentes e stories.
+ * Necessário porque os arquivos ficam fora do diretório padrão de detecção.
+ */
+@source "../../../../packages/react/src";
+@source "../../src";
+
+/* ─── KaiserInc Design Tokens ─── */
+@import "../../../../packages/tokens/src/css/colors.css";
+@import "../../../../packages/tokens/src/css/typography.css";
+@import "../../../../packages/tokens/src/css/spacing.css";
+@import "../../../../packages/tokens/src/css/radii.css";
+@import "../../../../packages/tokens/src/css/shadows.css";
+@import "../../../../packages/tokens/src/css/motion.css";

@@ -2,7 +2,7 @@ import { forwardRef } from "react";
 import type { ButtonHTMLAttributes, ReactNode } from "react";
 import { cn } from "../../utils/cn.js";
 
-export type ButtonVariant = "primary" | "secondary" | "ghost" | "danger";
+export type ButtonVariant = "primary" | "secondary" | "ghost" | "danger" | "outline";
 export type ButtonSize = "sm" | "md" | "lg";
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -33,6 +33,11 @@ const variantClasses: Record<ButtonVariant, string> = {
     "bg-transparent text-[var(--danger-500)]",
     "border border-[var(--danger-500)]",
     "hover:bg-[var(--danger-500)] hover:text-white",
+  ].join(" "),
+  outline: [
+    "bg-transparent text-[var(--brand)]",
+    "border border-[var(--brand)]",
+    "hover:bg-[var(--brand-subtle)]",
   ].join(" "),
 };
 

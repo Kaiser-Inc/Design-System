@@ -1,12 +1,6 @@
 import type { StorybookConfig } from "@storybook/react-vite";
-import { join, dirname } from "path";
-import { fileURLToPath } from "url";
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
-
-function getAbsolutePath(value: string): string {
-  return dirname(require.resolve(join(value, "package.json")));
-}
+import { join, resolve } from "path";
+import tailwindcss from "@tailwindcss/vite";
 
 const config: StorybookConfig = {
   stories: [
@@ -14,31 +8,37 @@ const config: StorybookConfig = {
     "../../../packages/react/src/**/*.stories.@(ts|tsx)",
     // Stories de overview (tokens, fundamentos)
     "../src/stories/**/*.stories.@(ts|tsx)",
-    "../src/stories/**/*.mdx",
   ],
   addons: [
-    getAbsolutePath("@storybook/addon-essentials"),
-    getAbsolutePath("@storybook/addon-interactions"),
-    getAbsolutePath("@storybook/addon-a11y"),
-    getAbsolutePath("@storybook/addon-themes"),
-    getAbsolutePath("@chromatic-com/storybook"),
+    "@storybook/addon-essentials",
+    "@storybook/addon-interactions",
+    "@storybook/addon-a11y",
+    "@storybook/addon-themes",
+    "@chromatic-com/storybook",
   ],
   framework: {
-    name: getAbsolutePath("@storybook/react-vite"),
+    name: "@storybook/react-vite",
     options: {},
   },
   docs: {
     autodocs: "tag",
   },
   viteFinal(config) {
+    const storybookDir = resolve(__dirname, "..");
     return {
       ...config,
+      plugins: [
+        // Tailwind v4 precisa vir ANTES dos plugins do Storybook/Vite
+        tailwindcss(),
+        ...(config.plugins ?? []),
+      ],
       resolve: {
         ...config.resolve,
         alias: {
           ...config.resolve?.alias,
-          "@kaiserinc/react": join(__dirname, "../../../packages/react/src/index.ts"),
-          "@kaiserinc/tokens": join(__dirname, "../../../packages/tokens/src/index.ts"),
+          // Aponta para o source diretamente para hot-reload funcionar em dev
+          "@kaiserinc/react": join(storybookDir, "../../packages/react/src/index.ts"),
+          "@kaiserinc/tokens": join(storybookDir, "../../packages/tokens/src/index.ts"),
         },
       },
     };
