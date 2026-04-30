@@ -1,5 +1,5 @@
 {
   "buildCommand": "npx turbo build --filter=@kaiserinc/storybook",
-  "outputDirectory": "apps/storybook/storybook-static",
+  "outputDirectory": "./apps/storybook/storybook-static",
   "installCommand": "pnpm install"
 }
