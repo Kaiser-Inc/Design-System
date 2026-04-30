@@ -1,5 +1,5 @@
 {
-  "buildCommand": "STORYBOOK_DISABLE_TELEMETRY=1 NODE_OPTIONS=--max-old-space-size=4096 npx turbo build --filter=@kaiserinc/storybook",
-  "outputDirectory": "./apps/storybook/storybook-static",
+  "buildCommand": "npx turbo build --filter=@kaiserinc/storybook && mv apps/storybook/storybook-static ./public-deploy",
+  "outputDirectory": "public-deploy",
   "installCommand": "pnpm install --no-frozen-lockfile"
 }
