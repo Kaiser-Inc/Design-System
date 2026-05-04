@@ -17,3 +17,23 @@
 @import "../../../../packages/tokens/src/css/radii.css";
 @import "../../../../packages/tokens/src/css/shadows.css";
 @import "../../../../packages/tokens/src/css/motion.css";
+
+/* ─── Custom Keyframes ─── */
+@keyframes shimmer {
+  100% { transform: translateX(100%); }
+}
+
+@keyframes accordion-down {
+  from { grid-template-rows: 0fr; opacity: 0; }
+  to   { grid-template-rows: 1fr; opacity: 1; }
+}
+
+@keyframes accordion-up {
+  from { grid-template-rows: 1fr; opacity: 1; }
+  to   { grid-template-rows: 0fr; opacity: 0; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

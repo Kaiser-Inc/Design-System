@@ -1,3 +1,4 @@
+"use client";
 import { forwardRef } from "react";
 import type { TextareaHTMLAttributes } from "react";
 import { cn } from "../../utils/cn.js";

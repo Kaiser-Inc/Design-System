@@ -1,3 +1,4 @@
+"use client";
 import { cn } from "../../utils/cn.js";
 
 export type ProgressSize = "sm" | "md" | "lg";

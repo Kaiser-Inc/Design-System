@@ -1,3 +1,4 @@
+"use client";
 import type { ImgHTMLAttributes } from "react";
 import { cn } from "../../utils/cn.js";
 
