@@ -1,4 +1,4 @@
-import React from "react";
+
 import { TouchableOpacity, Text, StyleSheet, ActivityIndicator, View } from "react-native";
 import type { TouchableOpacityProps, ViewStyle, TextStyle } from "react-native";
 import { semantic } from "../../tokens/colors.js";

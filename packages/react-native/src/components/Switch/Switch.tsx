@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Switch as RNSwitch, View, Text, StyleSheet } from "react-native";
 import type { ViewStyle } from "react-native";
 import { semantic } from "../../tokens/colors.js";

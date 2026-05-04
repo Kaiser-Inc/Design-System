@@ -1,4 +1,4 @@
-import React from "react";
+
 import { View, StyleSheet } from "react-native";
 import type { ViewStyle } from "react-native";
 import { semantic } from "../../tokens/colors.js";

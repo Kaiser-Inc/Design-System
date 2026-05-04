@@ -1,4 +1,4 @@
-import React from "react";
+
 import { ActivityIndicator } from "react-native";
 import { semantic } from "../../tokens/colors.js";
 

@@ -1,6 +1,6 @@
-import React from "react";
+
 import { View, Text, Image, StyleSheet } from "react-native";
-import type { ViewStyle } from "react-native";
+import type { ViewStyle, ImageStyle } from "react-native";
 import { semantic } from "../../tokens/colors.js";
 import { typography } from "../../tokens/typography.js";
 import { sx } from "../../utils/styleUtils.js";
@@ -27,7 +27,8 @@ export function Avatar({ name, src, size = "md", style }: AvatarProps) {
   const baseStyle = sx<ViewStyle>(styles.base, { width: dim, height: dim, borderRadius: dim / 2 }, style);
 
   if (src) {
-    return <Image source={{ uri: src }} style={[baseStyle, { borderRadius: dim / 2 }]} />;
+    const imgStyle: ImageStyle = { width: dim, height: dim, borderRadius: dim / 2, overflow: "hidden" };
+    return <Image source={{ uri: src }} style={imgStyle} />;
   }
   return (
     <View style={sx<ViewStyle>(baseStyle, styles.fallback)}>

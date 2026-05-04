@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { View, Text, TextInput, StyleSheet } from "react-native";
 import type { TextInputProps, ViewStyle } from "react-native";
 import { semantic } from "../../tokens/colors.js";

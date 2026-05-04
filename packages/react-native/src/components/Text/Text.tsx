@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Text as RNText, StyleSheet } from "react-native";
 import type { TextProps as RNTextProps } from "react-native";
 import { semantic } from "../../tokens/colors.js";
