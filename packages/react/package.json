@@ -33,7 +33,10 @@
   },
   "dependencies": {
     "@kaiserinc/tokens": "workspace:*",
+    "@radix-ui/react-slot": "^1.2.4",
     "clsx": "^2.1.1",
+    "lucide-react": "^1.14.0",
+    "sonner": "^2.0.7",
     "tailwind-merge": "^3.0.1"
   },
   "devDependencies": {

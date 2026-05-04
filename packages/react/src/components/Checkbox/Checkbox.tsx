@@ -1,3 +1,4 @@
+"use client";
 import { forwardRef, useState, useId, useEffect, useRef } from "react";
 import type { MutableRefObject, Ref, ChangeEvent } from "react";
 import { cn } from "../../utils/cn.js";
