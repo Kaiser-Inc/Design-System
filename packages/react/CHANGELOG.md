@@ -1,5 +1,11 @@
 # @kaiserinc/react
 
+## 0.2.1
+
+### Patch Changes
+
+- feat: add Dialog, Sheet, Popover, DropdownMenu, Tabs, Toast, Form, Table, Spinner, Pagination, Accordion, Sidebar, TopBar, ThemeProvider, Portal, useDisclosure; fix Select as custom dropdown
+
 ## 0.2.0
 
 ### Minor Changes
